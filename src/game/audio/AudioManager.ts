@@ -268,8 +268,11 @@ class AudioManagerImpl {
     this.stopBGM()
     this.bgmAudio = new Audio(url)
     this.bgmAudio.loop = true
+    this.bgmAudio.preload = 'none'  // 不阻塞页面加载
     this.bgmAudio.volume = this.bgmVol * this.masterVol
     if (this.musicOn) {
+      // 异步加载，不阻塞
+      this.bgmAudio.load()
       this.bgmAudio.play().catch(() => {})
     }
   }

@@ -23,10 +23,13 @@ export function LoginScreen({ onEnter }: LoginScreenProps) {
 
   const inWechat = isWechat()
 
-  // 登录页开始播 BGM + 海浪环境音
+  // 登录页先显示，BGM 延迟加载避免阻塞
   useEffect(() => {
-    AudioManager.playBGM('/bgm.mp3')
-    AudioManager.startAmbient()
+    const timer = setTimeout(() => {
+      AudioManager.playBGM('/bgm.mp3')
+      AudioManager.startAmbient()
+    }, 2000)  // 页面渲染完 2 秒后再加载音乐
+    return () => clearTimeout(timer)
   }, [])
 
   // 微信登录
