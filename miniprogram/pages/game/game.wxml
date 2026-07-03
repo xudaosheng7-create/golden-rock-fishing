@@ -1,0 +1,7 @@
+<!-- 游钓天下 - 游戏主页面 -->
+<web-view
+  src="{{gameUrl}}"
+  bindmessage="onMessage"
+  bindload="onWebViewLoad"
+  binderror="onWebViewError"
+/>
