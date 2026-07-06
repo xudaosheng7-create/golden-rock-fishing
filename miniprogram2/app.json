@@ -1,7 +1,5 @@
 {
-  "pages": [
-    "pages/game/game"
-  ],
+  "pages": ["pages/game/game"],
   "window": {
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white",

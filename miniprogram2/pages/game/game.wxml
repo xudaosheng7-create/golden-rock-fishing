@@ -1,0 +1,1 @@
+<web-view src="{{gameUrl}}" bindmessage="onMessage" binderror="onError" />

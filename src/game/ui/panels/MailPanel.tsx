@@ -9,7 +9,7 @@ interface MailPanelProps {
 const MOCK_MAILS = [
   {
     id: 'sys_001',
-    title: '欢迎来到游钓天下',
+    title: '欢迎来到金岩石海钓',
     content: '欢迎加入钓鱼的世界！作为新手礼物，我们为您准备了初始装备和金币，祝您钓获满满！',
     receivedAt: Date.now() - 86400000,
     read: true,

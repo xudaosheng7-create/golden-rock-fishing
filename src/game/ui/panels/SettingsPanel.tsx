@@ -145,7 +145,7 @@ export function SettingsPanel({ onClose }: SettingsPanelProps) {
         <div className="space-y-2 text-xs">
           <div className="flex justify-between">
             <span className="text-white/40">游戏名称</span>
-            <span className="text-white/70">游钓天下 OceanV41</span>
+            <span className="text-white/70">金岩石海钓游戏</span>
           </div>
           <div className="flex justify-between">
             <span className="text-white/40">版本</span>
